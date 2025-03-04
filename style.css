@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+.card {
+    position: relative;
+    overflow: hidden; /* Ensures child elements like images don't overflow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Shorter duration for subtle effect */
+    border-radius: 5px; /* Optional: rounded corners for aesthetics */
+}
+
+
+
+.card-body {
+    position: relative;
+    z-index: 2; /* Ensures text remains above the hover effect */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Smaller scale for a more subtle pop-up effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+.card-img-top{
+    width:100%;
+    height: 200px;
+    object-fit: contain;
+}
+
+/*.admin_image{
+    width: 100px;
+    object-fit: contain;
+}*/
+
+.nav-link.bg-success {
+    transition: all 0.3s ease;
+}
+
+.nav-link.bg-success:hover {
+    background-color: #28a745; /* Darker green on hover */
+    color: #fff; /* Ensures text remains readable */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
